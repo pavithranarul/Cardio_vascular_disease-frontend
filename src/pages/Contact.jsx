@@ -28,8 +28,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-[calc(100vh-64px)] flex flex-col lg:flex-row items-center p-8 gap-8 bg-gray-700 text-white">
-      <div className="flex-1 min-w-[300px] lg:w-1/2">
+    <div className="min-h-[calc(100vh-64px)] flex flex-wrap p-8 gap-8 bg-gray-700 items-center">
+      <div className="flex-1 min-w-[300px] pl-20">
         <h1 className="text-3xl font-bold text-blue-600 mb-2">Get in touch</h1>
         <p className="text-lg mb-4 text-white">We're here to help you!</p>
 
@@ -43,10 +43,10 @@ const Contact = () => {
             onChange={handleChange}
             required
             placeholder="Dr.P.Dhanalakshmi"
-            className="p-2 border rounded mb-4"
+            className="p-2 border rounded"
           />
 
-          <label className="mb-1 text-white" htmlFor="email">Email address :</label>
+          <label className="mt-4 mb-1 text-white" htmlFor="email">Email address :</label>
           <input
             type="email"
             id="email"
@@ -55,10 +55,10 @@ const Contact = () => {
             onChange={handleChange}
             required
             placeholder="email@website.com"
-            className="p-2 border rounded mb-4"
+            className="p-2 border rounded"
           />
 
-          <label className="mb-1 text-white" htmlFor="phone">Phone number :</label>
+          <label className="mt-4 mb-1 text-white" htmlFor="phone">Phone number :</label>
           <input
             type="tel"
             id="phone"
@@ -67,17 +67,17 @@ const Contact = () => {
             onChange={handleChange}
             required
             placeholder="555-555-5555"
-            className="p-2 border rounded mb-4"
+            className="p-2 border rounded"
           />
 
-          <label className="mb-1 text-white" htmlFor="message">Message :</label>
+          <label className="mt-4 mb-1 text-white" htmlFor="message">Message :</label>
           <textarea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
             rows="4"
-            className="p-2 border rounded mb-4"
+            className="p-2 border rounded"
           />
 
           <div className="flex items-start mt-4">
@@ -109,7 +109,7 @@ const Contact = () => {
         </form>
       </div>
 
-      <div className="flex-1 min-w-[300px] lg:w-1/2">
+      <div className="flex-1 min-w-200px]">
         <div>
           <h3 className="text-xl font-semibold mb-1 text-white">📧 Email</h3>
           <p className="mb-4">
